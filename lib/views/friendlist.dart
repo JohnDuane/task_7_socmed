@@ -17,7 +17,12 @@ class Friendlist extends StatelessWidget {
     child: Column(
       children: [
         Expanded(
-          child: Image.asset(friend.img),
+          child: 
+            Image.asset(
+              friend.img,
+              width: double.infinity,
+              fit: BoxFit.cover
+            ),
         ),
           Padding (
             padding: const EdgeInsets.all(8.0),
